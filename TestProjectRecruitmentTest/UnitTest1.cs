@@ -13,9 +13,6 @@ namespace TestProjectRecruitmentTest
 
             var result = findOrderCSV.FindOrders("1", DateTime.Now, DateTime.Now, new string[] { "1" });
             Assert.AreEqual(JsonSerializer.Serialize(new { resul = "no items" }), result);
-
-           
-
         }
 
         [TestMethod]
@@ -26,8 +23,6 @@ namespace TestProjectRecruitmentTest
             var result = findOrderCSV.FindOrders("1", DateTime.Now, DateTime.Now, new string[] { "1" });
 
             Assert.AreEqual(JsonSerializer.Serialize(new { resul = "no set source file" }), result);
-
-
         }
     }
 }
